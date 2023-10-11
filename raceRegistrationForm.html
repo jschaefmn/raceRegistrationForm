@@ -8,39 +8,50 @@
 </head>
 
 <body>
-    <h1>
-      Race Registration!
-    </h1>
+  <h1>
+    Race Registration!
+  </h1>
 
   <form>
     <div>
       <label for="firstName">First Name</label>
-      <input type="text" placeholder="Enter First Name" id="firstName">
+      <input type="text" placeholder="Enter First Name" name="firstName"" id=" firstName">
 
       <label for="lastName">Last Name</label>
-      <input type="text" placeholder="Enter First Name" id="lastName">
+      <input type="text" placeholder="Enter First Name" name="lastName" id="lastName">
     </div>
 
     <div>
       <p>Select a Race:</p>
       <div>
-        <input type="radio" name="funRun">
+        <input type="radio" name="race" id="funRun" value="funRun">
         <label for="funRun">Fun Run 5k</label>
       </div>
       <div>
-        <input type="radio" name="halfMarathon">
+        <input type="radio" name="race" id="halfMarathon" value="halfMarathon">
         <label for="halfMarathon">Half Marathon</label>
       </div>
       <div>
-        <input type="radio" name="fullMarathon">
+        <input type="radio" name="race" id="fullMarathon" value="fullMarathon">
         <label for="fullMarathon">Full Marathon</label>
       </div>
 
-      <label for="email">Email</label>
-      <input type="email" placeholder="Enter email">
-      <label for="password">Password</label>
-      <input type="text" placeholder="Enter Password">
+      <div>
+        <label for="email">Email</label>
+        <input type="email" placeholder="Enter email">
+        <label for="password">Password</label>
+        <input type="text" placeholder="Enter Password">
+      </div>
 
+      <div>
+        <label for="ageGroup">Select an Age Group</label>
+        <select name="ageGroup" id="ageGroup">
+          <option value="kids">Under 18</option>
+          <option value="youngAdults">18-30</option>
+          <option value="adults">30-50</option>
+          <option value="seniors">50+</option>
+        </select>
+      </div>
     </div>
     <button name="register">Register!</button>
   </form>
